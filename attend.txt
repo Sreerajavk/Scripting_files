@@ -1,0 +1,16 @@
+
+
+Roll no          Name               Day1      Day2     Day3
+
+1              Aaron                 x         x        A
+2              Abhinav               x         x        x
+3              Phlip paul            x         A        x
+4              Rahul mohan           x         x        A
+5              Sangeeth              A         A        x
+5              Sidharth              A         A        A
+6              Sreeraj               x         A        A
+7              Suraj Rajesh          x         x        x
+8              Terseetta martin      x         x        A
+9              Gokul                 x         x        x
+10             Teresa                x         x        x 
+ 

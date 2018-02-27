@@ -1,0 +1,3 @@
+wc -w $1
+
+read file

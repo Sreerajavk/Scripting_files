@@ -1,0 +1,12 @@
+echo "Enter the limit"
+read n
+i=0
+while [ $i -le $n ]
+do
+  sum1=`expr $sum1 + $i`
+  i=`expr $i + 2`
+done
+
+echo "sum = "$sum1
+
+

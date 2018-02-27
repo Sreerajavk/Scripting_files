@@ -1,0 +1,72 @@
+#include<stdio.h>
+#define max 30
+void heapup(int *,int);
+void heapdown(int*, int , int);
+void main()
+{
+  int heap[max],n,i,j,k,q;
+  printf("Enter the limit\n");
+  scanf("%d",&n);
+  printf("%d",n);
+  printf("Enter the elements\n");
+  for(i=1;i<=n;i++)
+  {
+     scanf("%d",&heap[i]);
+     heapup(heap,i); // read it
+  }
+  for(i=0;i<n;i++)
+     printf("%d ",heap[i]);
+  
+  q=n;
+  for(i=1;i<=q;i++)
+  {
+     int temp;
+     temp=heap[i];
+     heap[i]=heap[n];
+     heap[n]=temp;
+     n-=1;
+     heapdown(heap,1,n);
+  }
+  
+  n=j;
+  printf("The sorted elements are\n");
+  for(i=1;i<=q;i++)
+     printf("%d ",heap[i]);
+  
+}
+
+void heapup(int *heap,int index)
+{
+  printf("Entered\n");
+  int val=heap[index];
+
+  while((index>1) && heap[index/2]<val)
+  {
+    heap[index]=heap[index/2];
+    index=index/2;
+  }
+  
+  heap[index]=val;
+  
+}
+
+void heapdown(int *heap, int index,int n)
+{
+  printf("Enterd in heap down\n");
+  int val=heap[index];
+  int j=index*2;
+  while(j<=n){
+    if((j<n)&&heap[j]<heap[j+1])
+        j++;
+    if(heap[j]<heap[j/2])
+    {
+      break;
+      heap[j/2]=heap[j];
+      j=j*2;
+    }
+    
+    heap[j/2]=n;
+ }
+}
+
+  
